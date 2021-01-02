@@ -3,11 +3,11 @@
   "version": "0.9.0",
   "private": false,
   "dependencies": {
-    "@material-ui/core": "^4.10.1",
-    "@zoomus/websdk": "^1.8.1",
+    "@material-ui/core": "4.10.1",
+    "@zoomus/websdk": "^1.8.5",
     "axios": "^0.19.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
     "react-scripts": "3.4.1"
   },
   "scripts": {

@@ -5,12 +5,12 @@ const API_SECRET = '';
 import React, { Component } from 'react';
 import { ZoomMtg } from "@zoomus/websdk";
 // import { TextField, Button, Card } from "@material-ui/core";
-import './Zoomus.css'
+import './Zoom.css'
 
 const zoomMeeting = document.getElementById('zmmtg-root');
 
 
-class Zoomus extends Component {
+class Zoom extends Component {
   constructor( props ) {
     super( props )
   
@@ -83,7 +83,7 @@ class Zoomus extends Component {
   };
   
   componentDidMount() {
-    ZoomMtg.setZoomJSLib( 'https://source.zoom.us/1.8.1/lib', '/av' );
+    ZoomMtg.setZoomJSLib( 'https://source.zoom.us/1.8.5/lib', '/av' );
     ZoomMtg.preLoadWasm();
     ZoomMtg.prepareJssdk();
 
