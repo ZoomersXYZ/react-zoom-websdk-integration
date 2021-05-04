@@ -26,8 +26,7 @@ class Zoom extends Component {
     }
   };
   
-  launchMeeting = () => {
-    
+  launchMeeting = () => {    
     this.setState( { 
       meetingLaunched: !this.state.meetingLaunched 
     } );
@@ -83,7 +82,7 @@ class Zoom extends Component {
   };
   
   componentDidMount() {
-    ZoomMtg.setZoomJSLib( 'https://source.zoom.us/1.8.5/lib', '/av' );
+    ZoomMtg.setZoomJSLib( 'https://source.zoom.us/1.8.6/lib', '/av' );
     ZoomMtg.preLoadWasm();
     ZoomMtg.prepareJssdk();
 
@@ -121,4 +120,4 @@ class Zoom extends Component {
   }
 }
 
-export default Zoomus;
+export default Zoom;

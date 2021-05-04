@@ -4,7 +4,7 @@
   "private": false,
   "dependencies": {
     "@material-ui/core": "4.10.1",
-    "@zoomus/websdk": "^1.8.5",
+    "@zoomus/websdk": "^1.8.6",
     "axios": "^0.19.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",

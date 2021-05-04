@@ -1831,10 +1831,10 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
-"@zoomus/websdk@^1.8.5":
-  version "1.8.5"
-  resolved "https://registry.yarnpkg.com/@zoomus/websdk/-/websdk-1.8.5.tgz#18bcdb0c0c26f49cc28195411f99918eec4903e1"
-  integrity sha512-30g5d4GpIrwB2UwfwnActc0ySr5odRUnI8+s5qIa6ODdX39YrokS4qmiA5rg2Lj7C1lyuIxG1LTUZSoIbyy4Tw==
+"@zoomus/websdk@^1.8.6":
+  version "1.8.6"
+  resolved "https://registry.yarnpkg.com/@zoomus/websdk/-/websdk-1.8.6.tgz#6f37e5e2d5c79d0bf717ef4a9f41261d5ba83202"
+  integrity sha512-0TRUvCYnkHek9yX5/wXAqfxhNe+Jv8W6i4Tk11PRQiRy0EqI1qj2X6fS1saws75pBRCFeOXGppANeLezW7LUYg==
   dependencies:
     lodash "^4.17.14"
     react "16.8.6"
@@ -2776,9 +2776,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001035, caniuse-lite@^1.0.30001093, caniuse-lite@^1.0.30001097:
-  version "1.0.30001105"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001105.tgz#d2cb0b31e5cf2f3ce845033b61c5c01566549abf"
-  integrity sha512-JupOe6+dGMr7E20siZHIZQwYqrllxotAhiaej96y6x00b/48rPt42o+SzOSCPbrpsDWvRja40Hwrj0g0q6LZJg==
+  version "1.0.30001174"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001174.tgz"
+  integrity sha512-tqClL/4ThQq6cfFXH3oJL4rifFBeM6gTkphjao5kgwMaW9yn0tKgQLAEfKzDwj6HQWCB/aWo8kTFlSvIN8geEA==
 
 capture-exit@^2.0.0:
   version "2.0.0"
