@@ -1,3 +1,8 @@
+### Info
+The base for this is https://github.com/michaeldharrington/react-zoomus-websdk. Refer to both his and Zoom's readme's for more info on the web sdk and the general way this functions:
+https://github.com/michaeldharrington/react-zoomus-websdk/blob/master/README.md
+https://github.com/zoom/sample-app-web/blob/master/README.md
+
 ### Installation Steps
 _This is coded in Javascript (NodeJS specifically). Yarn as the package manager. Node is likely already installed for you. If not, look up installing node [and npm]_
 
