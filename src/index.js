@@ -7,10 +7,15 @@ const App = () => {
   return(
     <>
       <Zoomie 
+        sdkVersion="1.9.5"
+
+        leaveUrl="https://zoomers.xyz" 
+        
         meetingNumber={ 4149821362 } 
+        passWord="0000" 
+        role={ 1 } // { 0 } ?
+
         userName="The Mr Robot" 
-        passWord="" 
-        role={ 0 } 
       />
     </>
   ) 

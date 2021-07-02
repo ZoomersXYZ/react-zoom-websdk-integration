@@ -4,7 +4,6 @@ const API_KEY = '';
 const API_SECRET = '';
 import React, { Component } from 'react';
 import { ZoomMtg } from "@zoomus/websdk";
-// import { TextField, Button, Card } from "@material-ui/core";
 import './Zoom.css'
 
 const zoomMeeting = document.getElementById('zmmtg-root');
@@ -15,21 +14,21 @@ class Zoom extends Component {
     super( props )
   
     this.state = {
-      meetingLaunched: false,
-      apiKey: API_KEY,
-      apiSecret: API_SECRET,
-      meetingNumber: '4149821362',
-      userName: 'Mr Robot',
-      passWord: '',
-      leaveUrl: 'https://zoomers.xyz',
-      role: 1
+      sdkVersion: props.sdkVersion || '1.9.5', 
+
+      apiKey: props.apiKey || API_KEY, 
+      apiSecret: props.apiSecret || API_SECRET, 
+
+      leaveUrl: props.leaveUrl || 'https://zoomers.xyz', 
+      meetingNumber: props.meetingNumber || '4149821362', 
+      passWord: props.passWord || '0000', 
+      role: props.role || 1,  
+
+      userName: props.userName || 'Zoomers Web SDK User' 
     }
   };
   
-  launchMeeting = () => {    
-    this.setState( { 
-      meetingLaunched: !this.state.meetingLaunched 
-    } );
+  launchMeeting = () => { 
     const meetConfig = {
       meetingNumber: this.state.meetingNumber,
       passWord: this.state.passWord,
@@ -49,7 +48,7 @@ class Zoom extends Component {
         console.log( 'signature', res.result );
         ZoomMtg.init( {
           leaveUrl: 'localhost', 
-          // isSupportAV: false, // messes display up
+          isSupportAV: false, // messes display up
           debug: true, 
           disableJoinAudio: true, 
           disableCallOut: true, 
@@ -82,7 +81,7 @@ class Zoom extends Component {
   };
   
   componentDidMount() {
-    ZoomMtg.setZoomJSLib( 'https://source.zoom.us/1.8.6/lib', '/av' );
+    ZoomMtg.setZoomJSLib( `https://source.zoom.us/${ this.state.sdkVersion }/lib`, '/av' );
     ZoomMtg.preLoadWasm();
     ZoomMtg.prepareJssdk();
 
@@ -101,21 +100,8 @@ class Zoom extends Component {
       zoomMeeting.style.zIndex = '1';
       zoomMeeting.style.margin = '0%'
     }
-    // const { meetingLaunched, userName, meetingNumber, passWord } = this.state;
     return (
-      <div className="lol">
-        {/* { !meetingLaunched ?
-          <form className="form">
-            <TextField type="text" placeholder="Username" name="userName" value={ userName } onChange={ this.handleChange } />
-            <TextField type="text" placeholder="Meeting Number" name="meetingNumber" value={ meetingNumber } onChange={ this.handleChange } />
-            <TextField type="text" placeholder="Password" name="passWord" value={ passWord } onChange={ this.handleChange } />
-
-            <Button variant="contained" color="primary" className="launchButton" onClick={this.launchMeeting }>Launch Meeting</Button>
-          </form> 
-        :   
-          <></>
-        } */}
-      </div>
+      <></>
     )
   }
 }
